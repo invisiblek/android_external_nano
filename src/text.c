@@ -2922,6 +2922,11 @@ void do_spell(void)
     char *temp = safe_tempfile(&temp_file);
     const char *spell_msg;
 
+    if (ISSET(RESTRICTED)) {
+        nano_disabled_msg();
+	return;
+    }
+
     if (temp == NULL) {
 	statusbar(_("Error writing temp file: %s"), strerror(errno));
 	return;

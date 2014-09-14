@@ -20,7 +20,7 @@
 #
 # $Id: configure.ac 4484 2010-03-07 19:35:46Z astyanax $
 
-AC_INIT([GNU nano], [2.2.4], [nano-devel@gnu.org], [nano])
+AC_INIT([GNU nano], [2.2.6], [nano-devel@gnu.org], [nano])
 AC_CONFIG_SRCDIR([src/nano.c])
 AC_CANONICAL_TARGET([])
 AM_INIT_AUTOMAKE
